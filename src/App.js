@@ -3,21 +3,21 @@ import logo from './logo.svg';
 
 function App() {
   return (
-    <div className="App">
+    <div >
 	<h1>App Location Form</h1>
 		<div class="app-location">
 			<h2>Welcome to Locaticus</h2>
-			<div class="line"><span></span></div>
-			<div class="location"><img src="assets/images/location.png" class="img-responsive" alt="" /></div>
+			<div className="line"><span></span></div>
+			<div className="location"><img src="assets/images/location.png" className="img-responsive" alt="" /></div>
 			<form>
-				<input type="text" class="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" />
+				<input type="text" className="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" />
 				<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
-				<div class="submit"><input type="submit" onclick="myFunction()" value="Sign in" /></div>
-				<div class="clear"></div>
-				<div class="new">
+				<div className="submit"><input type="submit" onclick="myFunction()" value="Sign in" /></div>
+				<div className="clear"></div>
+				<div className="new">
 					<h3><a href="#">Forgot password ?</a></h3>
 					<h4><a href="#">New here ? Sign Up</a></h4>
-					<div class="clear"></div>
+					<div className="clear"></div>
 				</div>
 			</form>
 		</div>
