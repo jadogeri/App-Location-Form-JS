@@ -1,16 +1,14 @@
 import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
 import React from 'react'
 /**  ROUTES -- AUTHFLOW **/
-
+import Dashboard from "./pages/Dashboard.jsx";
+import ForgotPassword from "./pages/ForgotPassword.jsx";
+import Register from "./pages/Register.jsx";
 import NoPage from './pages/NoPage/NoPage.jsx';
-import BasicTablePage from "./pages/1_BasicTablePage/BasicTablePage.jsx";
-import SortingTablePage from "./pages/2_SortingTablePage/SortingTablePage.jsx"
-import GlobalFilterTablePage from "./pages/3_GlobalFilterTablePage/GlobalFilterTablePage.jsx";
-import ColumnFilterTablePage from "./pages/4_ColumnFilterTablePage/ColumnFilterTablePage.jsx";
-import ColumnResizableTablePage from "./pages/6_ColumnResizableTablePage/ColumnResizableTablePage.jsx";
+import Login from "./pages/Login.jsx";
+import ForgotPassword from "./pages/ForgotPassword.jsx";
+import ResetPassword from "./pages/ResetPassword.jsx";
 
-import PaginationTablePage from "./pages/5_PaginationTablePage/PaginationTablePage.jsx";
-import Index from "./pages/Hone/Home.jsx";
 
 //change browserrouter to HashRouter before 
 // deploying to github pages i.e change before npm run  deploy
@@ -28,14 +26,11 @@ const ProjectRoutes = ({
 
 	{/* <AppBar/>	 */}
 		<Routes >				
-			<Route path="/" element={<Index />} index /> 
-			<Route path="/basictable" element={<BasicTablePage />} /> 
-			<Route path="/sortingtable" element={<SortingTablePage />} /> 
-			<Route path="/globalfiltertable" element={<GlobalFilterTablePage />} /> 
-			<Route path="/columnfiltertable" element={<ColumnFilterTablePage />} /> 
-			<Route path="/paginationtable" element={<PaginationTablePage />} /> 
-			<Route path="/columnresizabletable" element={<ColumnResizableTablePage />} /> 
-
+			<Route path="/" element={<Login />} index /> 
+			<Route path="/register" element={<Register />} /> 
+			<Route path="/forgot" element={<ForgotPassword />} /> 
+			<Route path="/reset" element={<ResetPassword />} /> 
+			<Route path="/dashboard" element={<Dashboard />} /> 
 
 			<Route path="*" element={<NoPage />} />
 		</Routes>
