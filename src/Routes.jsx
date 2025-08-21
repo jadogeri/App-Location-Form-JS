@@ -19,7 +19,7 @@ const ProjectRoutes = ({
 
 	<>
 	
-	<HashRouter //basename={"/App-Location-Form-JS"}
+	<HashRouter basename={"/App-Location-Form-JS"}
 	>
 		<Routes >				
 			<Route path="/" element={<Login />} index /> 
