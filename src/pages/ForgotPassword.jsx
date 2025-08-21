@@ -16,7 +16,7 @@ const ForgotPassword = () => {
         <div className="submit"><input type="submit" onclick="myFunction()" value="Sign in" /></div>
         <div className="clear"></div>
         <div className="new">
-          <h3><Link to={"/forgot"} >Forgot password ?</Link></h3>
+          <h3><Link to={"/"} >Remember password ? Login</Link></h3>
           <h4><Link Link to={"/register"}>New here ? Sign Up</Link></h4>
           <div className="clear"></div>
         </div>
